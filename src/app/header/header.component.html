@@ -1,0 +1,33 @@
+<div class = "container-fluid bg-faded ">
+    <div class = "row justify-content-between logo-sm">
+        <div class = "md-col-5 " >
+            <p class = "text-start text-muted">
+                <span>Фабрика</span>
+                <img src="././assets/F.png" width="35" height="35" class="d-inline-block " >
+                <span>Курсовых</span></p>
+        </div>
+
+        <div class = "md-col-5" >
+            <ul class=" social text-end ">
+                <li><a href="#" class="single" onclick="showMyContacts()"><i class="fa fa-phone-square" aria-hidden="true"></i></a></li>
+                <li><a class="vk" href="https://vk.com/vikakurs"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                <li><a class="ok" href="https://ok.ru/profile/574590333065"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+                <li><a class="fb" href="https://www.facebook.com/profile.php?id=100008845360520"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="ent1" onclick="changeStyle()"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-toggleable-sm navbar-light bg-faded min-marg-top">
+  <button class="navbar-toggler min-marg-top" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon min-marg-top"></span>
+  </button>
+  <div class="collapse navbar-collapse min-marg-top" id="navbarTogglerDemo01">
+       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li *ngFor = "let item of myLinks" class="nav-item main-link">
+            <a class="nav-link fontS min-marg-top" href={{item.rlink}}>{{item.name}}</a>
+          </li>
+        </ul>
+  </div>
+</nav>

@@ -8,9 +8,6 @@
   VK.init({apiId: 6107338, onlyWidgets: true});
 </script>
 
-<script type="text/javascript">VK.Widgets.Group("vk_groups", {mode: 3}, 106013477);
-</script>
-
   <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
   <script src="https://use.fontawesome.com/82dbd200d6.js"></script>
   <title>Fk</title>
@@ -21,7 +18,13 @@
 </head>
 <body>
   <app-root>Loading...</app-root>
+  
+  <script type="text/javascript">
+  VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+  </script>
 
+  <script type="text/javascript">VK.Widgets.Group("vk_groups", {mode: 3}, 106013477);
+  </script>
 </body>
 
 </html>

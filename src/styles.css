@@ -403,7 +403,9 @@ fieldset, .my-contacts {
 }
 }
 
-
 .min-marg-top{
     margin-top: -1%;
+}
+.vk_comments{
+    width: 200%;
 }

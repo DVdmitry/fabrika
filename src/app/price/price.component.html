@@ -1,0 +1,22 @@
+<ngb-tabset>
+  <ngb-tab *ngFor = "let item of price"title={{item.name}}>
+    <ng-template ngbTabContent>
+        <div class = "container-fluid bcgr-white">
+            <div class = "row justify-content-around">
+                <div class="col-md-7">
+                    <br>
+                        <p class = "fontBig text-faded display-4 ">{{item.text}}</p>
+                    <br>
+                </div>
+                <div class="col-md-4">
+                    <br>
+                    <div class="card-img-top marg">
+                       <img class="img-thumbnail" src={{item.pictLink}}>
+                   </div>
+                   <br>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>

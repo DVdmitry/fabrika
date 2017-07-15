@@ -1,0 +1,40 @@
+<div class = "container-fluid bcgr-white" *ngFor = "let item of picturesAbout">
+    <div class = "row justify-content-around">
+        <div class="col-md-6" >
+            <br>
+            <h1 class = "font Biger text-warning display-4 ">{{item.name}}</h1>
+            <p class = "fontBig text-faded display-4 ">{{item.text}}</p>
+            <br>
+        </div>
+        <div class="col-md-5">
+            <br>
+            <div class="card-img-top marg">
+               <img class="img-thumbnail" src={{item.pictLink}}>
+           </div>
+           <br>
+        </div>
+    </div>
+</div>
+<!--
+            <br>
+            <h1 class = "display-4">Авторский состав</h1>
+            <p>В штате компании 3 автора, каждый специализируется на своих профильных дисциплинах, что обеспечивает постоянно высокое качества работ.
+                Причем, заказывая работу вы общаетесь непосредственно с автором, которому можно задать любые вопросы по вашей работе и получить исчерпывающие ответы.
+                Мы работаем без посредников, чем сокращаем время исполнения как самой работы, так и возможных последующих доработок</p>
+
+<br>
+
+<div class = "container-fluid">
+    <div class = "row justify-content-around">
+        <div class="col-sm-6 col-md-3 card" *ngFor = "let item of picturesAbout">
+                  <div class="card-img-top marg">
+                     <img class="img-thumbnail onHow2" src={{item.pictLink}}>
+                     <div class="card-block">
+                       <h4 class="card-title">{{item.name}}</h4>
+                     </div>
+                 </div>
+        </div>
+    </div>
+</div> -->
+<br>
+<site-links></site-links>

@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'main',
-    template: `<ngbd-carousel-basic></ngbd-carousel-basic>
+    template: `
+                <div class = "card img-thumbnail">
+                    <ngbd-carousel-basic></ngbd-carousel-basic>
+                </div>
                 <site-links></site-links>
-                <vk></vk>
-                `
+                <vk></vk>`
 })
 
 export class MainPageComponent {

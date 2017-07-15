@@ -2,15 +2,48 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F7F7F7;
-    /*background-image: url('./assets/beach.jpg');*/
-    /*background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 60% 40%;*/
+    /*background-image: url('https://s3.amazonaws.com/fabrika-kurs/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    /*background-position: 60% 40%;*/
 }
 .bcgr-white{
     background-color:white;
 }
+.bcgr-custom{
+    background-image: url('https://s3.amazonaws.com/fabrika-kurs/bcgr.jpg');
+}
+/*.card-puzzle{
+        background-image: url('https://s3.amazonaws.com/fabrika-kurs/puzzle.jpg');
+}*/
 
+.bcgr-grey{
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+    padding: 2%;
+    margin: 2%;
+}
+.marg-top-zero{
+    margin-top: -.5%;
+    padding-top: 0;
+}
+.marg-top-one{
+        margin-top: 1%;
+}
+
+.font-white{
+    font-weight: bolder;
+}
+.fontPink{
+        color: white;
+        text-shadow:
+                    black -2px -2px 1px,
+                    white -1px -1px 1px,
+                    black 1px 1px 1px,
+                    white 2px 2px 1px,
+                    black 4px 4px 4px;
+}
 
 /*header*/
 .navbar-nav{
@@ -41,6 +74,11 @@ ul.social{
     width: 35px;
     text-align: center;
     padding-right: 6px;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
 }
 
 header .vk, header .ok, header .fb{
@@ -84,127 +122,7 @@ ul.social li a{
 
 }
 
- a.ent1{
-    display: block;
-    text-decoration: none;
-    color: black;
-    opacity: 0.5;
-    transform: scale(1.4);
-    padding-top: 9%;
-}
 
-
-a.ent1:hover {
-opacity: 1;
-}
-
-
-
-#PUP, #PUP-contacts {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.65);
-    display: none;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-
-}
-
-
-fieldset, .my-contacts {
-    text-align: left;
-    margin: 0px;
-    padding: 15px;
-    color: black;
-    font-size: 15px;
-    position: absolute;
-    z-index: 1;
-    width: 300px;
-    background: white;
-    border-radius: 3px;
-    top:0%;
-    left: 35%;
-}
-
-
-.my-contacts {
-    color: black;
-}
-
-
-
-.cross a{
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-.cross {
-    text-decoration: none;
-    font-size: 20px;
-    opacity: 0.3;
-    font-weight: bolder;
-}
-
-.cross:hover {
-    color: black;
-    opacity: 1;
-}
-
-.inside {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
-}
-
-    .inside-last p {
-    margin-top: 15px;
-}
-
-input {
-    width: 100%;
-    height: 23px;
-    font-size: 16px;
-    margin: 12px 0px;
-}
-
-fieldset label{
-    color: black;
-    margin: 12px 0px;
-    padding: 0px;
-}
-
-fieldset p{
-    margin: 12px 0px;
-    padding: 0px;
-}
-
-.enter {
-    line-height: 200%;
-}
-
-
-.enter a {
-    text-decoration: none;
-    display: block;
-    background: #428BCA;
-    text-align: center;
-    color: white;
-}
-
-.enter a:hover{
-    box-shadow: inset blue 1px 1px 10px;
-}
-
-
-form .social li {
-    max-width: 30px;
-    min-width: 30px;
-    height: 24px;
-    text-align: center;
-}
 /*footer*/
 footer {
     padding: 30px 20px;
@@ -403,9 +321,18 @@ fieldset, .my-contacts {
 }
 }
 
+.fontBig {
+    font-size: 22px;
+}
+
+.fontBiger{
+        font-size: 32px;
+}
+
 .min-marg-top{
     margin-top: -1%;
 }
-.vk_comments{
-    width: 200%;
+
+.selected{
+    text-decoration: underline;
 }

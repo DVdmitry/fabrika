@@ -336,3 +336,12 @@ fieldset, .my-contacts {
 .selected{
     text-decoration: underline;
 }
+.toButton {
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+    margin: 1px;
+}
+
+.toButton:hover {
+    box-shadow: 1px 1px 1px 1px;
+}

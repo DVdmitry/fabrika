@@ -33,7 +33,7 @@ body {
 }
 
 .font-white{
-    font-weight: bolder;
+    font-weight: bolder ;
 }
 .fontPink{
         color: white;
@@ -344,4 +344,7 @@ fieldset, .my-contacts {
 
 .toButton:hover {
     box-shadow: 1px 1px 1px 1px;
+}
+.fontTooBiger {
+    font-size: 38px;
 }

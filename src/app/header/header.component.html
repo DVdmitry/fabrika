@@ -10,7 +10,7 @@
         <div class = "md-col-5 marg-top-one">
             <ul class=" social text-end ">
                 <li><a placement="bottom" class = "single"
-              ngbPopover="8-029-751-55-51; 8-029-347-12-22" popoverTitle="Контакты">
+              ngbPopover="мтс: 751-55-51  велком: 347-12-22" popoverTitle="Контакты">
              <i class="fa fa-phone-square" aria-hidden="true" ></i></a></li>
                     <li><a class="vk" href="https://vk.com/vikakurs"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                 <li><a class="ok" href="https://ok.ru/profile/574590333065"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
@@ -20,15 +20,16 @@
     </div>
 </div>
 
-<nav class="navbar navbar-toggleable-sm navbar-light bcgr-custom min-marg-top">
+<nav class="navbar navbar-toggleable-sm navbar-light bcgr-white min-marg-top">
   <button class="navbar-toggler min-marg-top" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon min-marg-top"></span>
   </button>
   <div class="collapse navbar-collapse min-marg-top" id="navbarTogglerDemo01">
        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li *ngFor = "let item of myLinks" class="nav-item main-link">
-            <a class="nav-link toButton min-marg-top font-white onHow" routerLink={{item.rlink}} (click) = "onSelect(item)" [class.selected] = "item===selectedLink" >{{item.name}}</a>
+            <a class="nav-link min-marg-top onHow" routerLink={{item.rlink}} (click) = "onSelect(item)" [class.selected] = "item===selectedLink"><h1 class = "fontS display-4">{{item.name}}</h1></a>
           </li>
         </ul>
   </div>
+  <hr class = "bcgr-white">
 </nav>

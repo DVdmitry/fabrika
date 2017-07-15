@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
                     <ngbd-carousel-basic></ngbd-carousel-basic>
                 </div>
                 <site-links></site-links>
-                <vk></vk>`
+                <br>
+                <video-youtube></video-youtube>
+                <vk></vk>
+                `
 })
 
 export class MainPageComponent {

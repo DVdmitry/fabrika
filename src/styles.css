@@ -51,9 +51,9 @@ body {
 }
 
 a.single {
-    transform: scale(1.7);
+    transform: scale(1.9);
     display: block;
-    width: 35px;
+    width: 45px;
     height: 50px;
     padding-top: 17%;
     padding-right: 15%;
@@ -66,12 +66,12 @@ ul.social{
     display: flex;
     justify-content: flex-end;
     flex: 1 1 30%;
-    min-width: 180px;
-    max-width: 180px;
+    min-width: 220px;
+    max-width: 220px;
 }
 
 .social li {
-    width: 35px;
+    width: 45px;
     text-align: center;
     padding-right: 6px;
 }
@@ -83,6 +83,7 @@ a {
 
 header .vk, header .ok, header .fb{
     padding: 10% 15%;
+    border-radius: 15%;
 }
 
 header .vk:hover, header .ok:hover, header .fb:hover{

@@ -45,28 +45,28 @@ import { NgbdTabsetBasic } from './tabset/tabset-basic';
   imports: [
       RouterModule.forRoot([
      {
-          path: 'fabrika/main',
+          path: 'main',
           component: MainPageComponent
       },
       {
           path: '',
-          redirectTo: '/fabrika/main',
+          redirectTo: '/main',
           pathMatch: 'full'
       },
       {
-           path: 'fabrika/about',
+           path: 'about',
            component: AboutComponent
        },
        {
-           path: 'fabrika/kurs',
+           path: 'kurs',
            component: KursComponent
        },
        {
-           path: 'fabrika/diplom',
+           path: 'diplom',
            component: DiplomComponent
        },
        {
-           path: 'fabrika/price',
+           path: 'price',
            component: PriceComponent
        }
       ]),

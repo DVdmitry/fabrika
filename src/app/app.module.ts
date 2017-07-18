@@ -48,27 +48,27 @@ import { NgbdTabsetBasic } from './tabset/tabset-basic';
           path: 'main',
           component: MainPageComponent
       },
-      {
-          path: '',
-          redirectTo: '/main',
-          pathMatch: 'full'
-      },
-      {
-           path: 'about',
-           component: AboutComponent
-       },
-       {
-           path: 'kurs',
-           component: KursComponent
-       },
-       {
-           path: 'diplom',
-           component: DiplomComponent
-       },
-       {
-           path: 'price',
-           component: PriceComponent
-       }
+    //   {
+    //       path: '',
+    //       redirectTo: '/main',
+    //       pathMatch: 'full'
+    //   },
+    //   {
+    //        path: 'about',
+    //        component: AboutComponent
+    //    },
+    //    {
+    //        path: 'kurs',
+    //        component: KursComponent
+    //    },
+    //    {
+    //        path: 'diplom',
+    //        component: DiplomComponent
+    //    },
+    //    {
+    //        path: 'price',
+    //        component: PriceComponent
+    //    }
       ]),
     NgbModule.forRoot(),
     BrowserModule,

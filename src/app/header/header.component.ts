@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Service } from '../service';
 import { MainLink } from '../main-link/main-link';
 import { NgbdPopoverBasic } from '../popover-basic/popover-basic';
+import { KursComponent } from '../kurs/kurs.component';
 
 @Component({
     selector: 'header',

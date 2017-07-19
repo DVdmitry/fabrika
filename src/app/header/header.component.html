@@ -31,29 +31,8 @@
   <div class="collapse navbar-collapse min-marg-top" id="navbarTogglerDemo01">
        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li *ngFor = "let item of myLinks" class="nav-item main-link">
-            <a class="nav-link min-marg-top onHow" href="#{{item.rlink}}" (click) = "onSelect(item)" [class.selected] = "item===selectedLink"><h1 class = "fontS display-4">{{item.name}}</h1></a>
-<!-- заменил ссылку на якорь, поменял ссылки на якоря в main-link.data -->
+            <a class="nav-link min-marg-top onHow" routerLink={{item.rlink}} (click) = "onSelect(item)" [class.selected] = "item===selectedLink"><h1 class = "fontS display-4">{{item.name}}</h1></a>
           </li>
         </ul>
   </div>
 </nav>
-<div class = "card img-thumbnail">
-    <ngbd-carousel-basic></ngbd-carousel-basic>
-    <br>
-    <div class = "container-fluid">
-        <div class = "row justify-content-center">
-            <div class = "col-md-12">
-                <div class="card text-center">
-                  <h1 class="fontTooBiger hidden-xs-down text-muted display-4 "><a name = "kurs">Курсовые работы: организация выполнения, примеры оформления курсовых</a></h1>
-                </div>
-                <br>
-            </div>
-        </div>
-    </div>
-</div>
-    <kurs></kurs>
-<site-links></site-links>
-
-    <br>
-<video-youtube></video-youtube>
-<vk></vk>

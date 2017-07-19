@@ -1,7 +1,7 @@
 <div class = "container-fluid bcgr-custom marg-top-zero">
     <div class = "row justify-content-between logo-sm">
-        <div class = "md-col-5 marg-top-one" >
-            <a routerLink = "/main"> <p class = "text-start text-muted">
+        <div class = "md-col-5 marg-top-one hidden-xs-down" >
+            <a href = "#about"> <p class = "text-start text-muted">
                 <span>Фабрика</span>
                 <img src="https://s3.amazonaws.com/fabrika-kurs/F.png" width="35" height="35" class="d-inline-block " >
                 <span>Курсовых</span></p></a>
@@ -16,9 +16,9 @@
                 <li><a placement="right" class = "single hidden-sm-up"
               ngbPopover="мтс: 751-55-51  велком: 347-12-22" popoverTitle="Контакты">
                <i class="fa fa-phone-square" aria-hidden="true" ></i></a></li>
-                    <li><a class="vk" href="https://vk.com/vikakurs"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                <li><a class="ok" href="https://ok.ru/profile/574590333065"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
-                <li><a class="fb" href="https://www.facebook.com/groups/872663902899240/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a class="vk" href="https://vk.com/vikakurs" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                <li><a class="ok" href="https://ok.ru/profile/574590333065" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+                <li><a class="fb" href="https://www.facebook.com/groups/872663902899240/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </div>
@@ -31,8 +31,20 @@
   <div class="collapse navbar-collapse min-marg-top" id="navbarTogglerDemo01">
        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li *ngFor = "let item of myLinks" class="nav-item main-link">
-            <a class="nav-link min-marg-top onHow" routerLink={{item.rlink}} (click) = "onSelect(item)" [class.selected] = "item===selectedLink"><h1 class = "fontS display-4">{{item.name}}</h1></a>
+            <a class="nav-link min-marg-top onHow" href="#{{item.rlink}}" (click) = "onSelect(item)" [class.selected] = "item===selectedLink"><h1 class = "fontS display-4">{{item.name}}</h1></a>
           </li>
         </ul>
   </div>
 </nav>
+<div class = "card img-thumbnail">
+    <ngbd-carousel-basic></ngbd-carousel-basic>
+</div>
+<br>
+
+<kurs></kurs>
+<site-links></site-links>
+<diplom></diplom>
+<price></price>
+<about></about>
+<video-youtube></video-youtube>
+<vk></vk>

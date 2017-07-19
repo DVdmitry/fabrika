@@ -1,14 +1,24 @@
+<div class="container-fluid lectures">
+    <div class = "row justify-content-center">
+        <div class = "col-md-12 ">
+            <div class="card text-center bg-info">
+              <h1 class="fontTooBiger display-4 fontPink"><a name = "diplom">Дипломная работа</a></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
 <ngb-tabset>
-  <ngb-tab *ngFor = "let item of diplom"title={{item.name}}>
+  <ngb-tab *ngFor = "let item of diplom" title={{item.name}}>
     <ng-template ngbTabContent>
         <div class = "container-fluid bcgr-white">
             <div class = "row justify-content-around">
-                <div class="col-md-7">
+                <div class="col-md-9">
                     <br>
                         <p class = "fontBig text-faded display-4 ">{{item.text}}</p>
                     <br>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <br>
                     <div class="card-img-top marg">
                        <img class="img-thumbnail" src={{item.pictLink}}>
@@ -21,27 +31,47 @@
   </ngb-tab>
 </ngb-tabset>
 <br>
-
+<ngb-tabset>
+  <ngb-tab *ngFor = "let item of diplomAdvice" title={{item.name}}>
+    <ng-template ngbTabContent>
+        <div class = "container-fluid bcgr-white">
+            <div class = "row justify-content-around">
+                <div class="col-md-8">
+                    <br>
+                        <p class = "fontBig text-faded display-4 ">{{item.text}}</p>
+                    <br>
+                </div>
+                <div class="col-md-4">
+                    <br>
+                    <div class="card-img-top marg">
+<a href = "https://vk.com/fabrikabel" target="_blank"><img class="img-thumbnail" src="https://s3.amazonaws.com/fabrika-kurs/diplom/group+vk.jpg"></a>
+                   </div>
+                   <br>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>
 
 
 <div class="container-fluid lectures">
     <div class = "row justify-content-center">
         <div class = "col-md-12">
-            <div class="card text-center">
+            <div class="card text-center ">
               <h1 class="text-muted fontTooBiger display-4">Структура дипломной работы:</h1>
             </div>
 <br>
         <div class = "container-fluid">
             <div class = "row justify-content-center">
-                <div class="col-md-4 card " *ngFor = "let item of diplomStruct">
+                <div class="col-md-3 card marg" *ngFor = "let item of diplomStruct">
                       <div class="bcgr-grey fontBiger display-4">
                         {{item.name}}
                       </div>
-                      <div class="card-block">
+                      <div class="card-block ">
                         <h1 class="card-text fontBig display-4 ">{{item.text}}</h1>
                       </div>
                 </div>
             </div>
         </div>
         <br>
-        <site-links></site-links>

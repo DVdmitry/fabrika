@@ -44,31 +44,31 @@ import { NgbdTabsetBasic } from './tabset/tabset-basic';
   ],
   imports: [
       RouterModule.forRoot([
-     {
-          path: 'main',
-          component: MainPageComponent
-      },
-      {
-          path: '',
-          redirectTo: '/main',
-          pathMatch: 'full'
-      },
-      {
-           path: 'about',
-           component: AboutComponent
-       },
-       {
-           path: 'kurs',
-           component: KursComponent
-       },
-       {
-           path: 'diplom',
-           component: DiplomComponent
-       },
-       {
-           path: 'price',
-           component: PriceComponent
-       }
+    //   {
+    //       path: 'main',
+    //       component: MainPageComponent
+    //   },
+    //   {
+    //       path: '',
+    //       redirectTo: '/main',
+    //       pathMatch: 'full'
+    //   },
+    //   {
+    //        path: 'about',
+    //        component: AboutComponent
+    //    },
+    //    {
+    //        path: 'kurs',
+    //        component: KursComponent
+    //    },
+    //    {
+    //        path: 'diplom',
+    //        component: DiplomComponent
+    //    },
+    //    {
+    //        path: 'price',
+    //        component: PriceComponent
+    //    }
       ]),
     NgbModule.forRoot(),
     BrowserModule,

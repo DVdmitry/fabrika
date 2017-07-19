@@ -12,12 +12,13 @@ export class KursComponent implements OnInit{
     constructor (private service: Service){}
     kurs : Kurs[];
     kursStruct: Kurs[];
+    kursAdvice: Kurs[];
 
 
     ngOnInit(): void {
         this.kurs = this.service.getKurs();
         this.kursStruct = this.service.getKursStruct();
-
+        this.kursAdvice = this.service.getKursAdvice();
     }
 
 

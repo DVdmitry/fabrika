@@ -13,9 +13,6 @@ body {
 .bcgr-custom{
     background-image: url('https://s3.amazonaws.com/fabrika-kurs/bcgr.jpg');
 }
-/*.card-puzzle{
-        background-image: url('https://s3.amazonaws.com/fabrika-kurs/puzzle.jpg');
-}*/
 
 .bcgr-grey{
     background-color: grey;

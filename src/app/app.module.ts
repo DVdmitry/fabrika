@@ -5,9 +5,9 @@ import { HttpModule } from '@angular/http';
 import { Service } from './service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { NgbdModalBasic } from './modal-basic/modal-basic';
-
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -23,6 +23,7 @@ import { DiplomComponent } from './diplom/diplom.component';
 import { NgbdPopoverBasic } from './popover-basic/popover-basic';
 import { PriceComponent } from './price/price.component';
 import { NgbdTabsetBasic } from './tabset/tabset-basic';
+import { NgbdAccordionConfig } from "./accordion/accordion-config";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { NgbdTabsetBasic } from './tabset/tabset-basic';
     DiplomComponent,
     NgbdPopoverBasic,
     PriceComponent,
-    NgbdTabsetBasic
+    NgbdTabsetBasic,
+    NgbdAccordionConfig
   ],
   imports: [
       RouterModule.forRoot([
@@ -75,7 +77,7 @@ import { NgbdTabsetBasic } from './tabset/tabset-basic';
     FormsModule,
     HttpModule
   ],
-  providers: [NgbCarouselConfig, Service],
+  providers: [NgbCarouselConfig,  NgbAccordionConfig, Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

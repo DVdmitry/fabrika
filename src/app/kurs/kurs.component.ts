@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Kurs } from './kurs';
 import { Service } from '../service';
 import { NgbdTabsetBasic } from '../tabset/tabset-basic';
+import { NgbdAccordionConfig } from '../accordion/accordion-config';
 
 @Component({
     selector: 'kurs',

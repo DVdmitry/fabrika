@@ -17,6 +17,8 @@ import { DIPLOMSTRUCT } from "./diplom/diplom-data";
 import { DIPLOMADVICE } from "./diplom/diplom-data";
 import { Price } from "./price/price";
 import { PRICEDATA } from "./price/price-data";
+import { Icon } from "./header/header";
+import { ICONS } from "./header/header-data";
 
 
 @Injectable()
@@ -59,6 +61,10 @@ export class Service {
     }
     getKursAdvice(): Kurs[]{
         return KURSADVICE;
+    }
+
+    getIcons(): Icon[] {
+        return ICONS;
     }
 
 }

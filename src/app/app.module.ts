@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ApplicationRef  } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Service } from './service';
@@ -8,6 +8,8 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { NgbdModalBasic } from './modal-basic/modal-basic';
+import { CommonModule } from '@angular/common';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -25,7 +27,7 @@ import { PriceComponent } from './price/price.component';
 import { NgbdTabsetBasic } from './tabset/tabset-basic';
 import { NgbdAccordionConfig } from "./accordion/accordion-config";
 import { ContactsComponent } from "./contacts/contacts.component";
-
+import { MapComponent } from "./map-component/map.component";
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import { ContactsComponent } from "./contacts/contacts.component";
     PriceComponent,
     NgbdTabsetBasic,
     NgbdAccordionConfig,
-    ContactsComponent
+    ContactsComponent,
+    MapComponent
   ],
   imports: [
       RouterModule.forRoot([
@@ -76,11 +79,16 @@ import { ContactsComponent } from "./contacts/contacts.component";
     //    }
       ]),
     NgbModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCCOao2VWJcrD55R4WYya5p1FVj4q4p4xA'
+    }),
     BrowserModule,
+    CommonModule,
     FormsModule,
     HttpModule
   ],
   providers: [NgbCarouselConfig,  NgbAccordionConfig, Service],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, MapComponent]
 })
 export class AppModule { }
+export class MapModule { }

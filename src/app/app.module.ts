@@ -24,6 +24,8 @@ import { NgbdPopoverBasic } from './popover-basic/popover-basic';
 import { PriceComponent } from './price/price.component';
 import { NgbdTabsetBasic } from './tabset/tabset-basic';
 import { NgbdAccordionConfig } from "./accordion/accordion-config";
+import { ContactsComponent } from "./contacts/contacts.component";
+
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { NgbdAccordionConfig } from "./accordion/accordion-config";
     NgbdPopoverBasic,
     PriceComponent,
     NgbdTabsetBasic,
-    NgbdAccordionConfig
+    NgbdAccordionConfig,
+    ContactsComponent
   ],
   imports: [
       RouterModule.forRoot([

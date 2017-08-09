@@ -78,6 +78,18 @@ VK.Widgets.Group("vk_groups", {mode: 3}, 106013477);
   ga('send', 'pageview');
 
 </script>
+
+<script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 53.9181088, lng: 27.4643773},
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCOao2VWJcrD55R4WYya5p1FVj4q4p4xA&callback=initMap"
+  async defer></script>
 </body>
 
 </html>
